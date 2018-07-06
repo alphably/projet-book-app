@@ -1,0 +1,18 @@
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Author</th>
+    <th>Title</th>
+    <th>Pages number</th>
+    <th>Available</th>
+    <th>Publication</th>
+    <th>Rent number</th>
+  </tr>
+  <tr  *ngFor="let book of books; index as i">
+    <td>{{book.author}}</td>
+    <td>{{book.title}}</td>
+    <td>{{book.nbPages}}</td>
+    <td>{{book.available}}</td>
+    <td>{{book.publicationDate}}</td>
+    <td>{{book.nbRent}}</td>
+  </tr>
+</table>

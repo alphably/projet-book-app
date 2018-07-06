@@ -1,0 +1,10 @@
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Title</th>
+    <th>available</th>
+  </tr>
+  <tr  *ngFor="let book of books; index as i">
+    <td> <a routerLink="/authors/{{book.id}}">{{book.title}}</a></td>
+    <td>{{book.available}}</td>
+  </tr>
+</table>
